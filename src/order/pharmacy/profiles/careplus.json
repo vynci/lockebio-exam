@@ -1,0 +1,44 @@
+{
+  "integrationName": "careplus",
+  "orderSchema": {
+    "product": {
+      "field": "carePlusProduct",
+      "type": "string"
+    },
+    "quantity": {
+      "field": "carePlusQuantity",
+      "type": "number"
+    },
+    "customerInfo": {
+      "field": "carePlusClientInfo",
+      "type": "object",
+      "properties": {
+        "name": {
+          "field": "carePlusClientName",
+          "type": "string"
+        },
+        "address": {
+          "field": "carePlusClientAddress",
+          "type": "string"
+        },
+        "city": {
+          "field": "carePlusClientCity",
+          "type": "string"
+        },
+        "state": {
+          "field": "carePlusClientState",
+          "type": "string"
+        },
+        "zipCode": {
+          "field": "carePlusClientZipcode",
+          "type": "string"
+        },
+        "country": {
+          "field": "carePlusClientCountry",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "endpoint": "http://pharmacy-mock-service-env.eba-xzj3bbnm.us-east-1.elasticbeanstalk.com/careplus/orders"
+}

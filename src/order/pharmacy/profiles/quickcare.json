@@ -1,0 +1,44 @@
+{
+  "integrationName": "quickcare",
+  "orderSchema": {
+    "product": {
+      "field": "quickCareProduct",
+      "type": "string"
+    },
+    "quantity": {
+      "field": "quickCareQuantity",
+      "type": "number"
+    },
+    "customerInfo": {
+      "field": "quickCareUserData",
+      "type": "object",
+      "properties": {
+        "name": {
+          "field": "quickCareUserName",
+          "type": "string"
+        },
+        "address": {
+          "field": "quickCareUserAddress",
+          "type": "string"
+        },
+        "city": {
+          "field": "quickCareUserCity",
+          "type": "string"
+        },
+        "state": {
+          "field": "quickCareUserState",
+          "type": "string"
+        },
+        "zipCode": {
+          "field": "quickCareUserZipcode",
+          "type": "string"
+        },
+        "country": {
+          "field": "quickCareUserCountry",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "endpoint": "http://pharmacy-mock-service-env.eba-xzj3bbnm.us-east-1.elasticbeanstalk.com/quickcare/orders"
+}

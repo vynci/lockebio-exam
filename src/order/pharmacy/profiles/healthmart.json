@@ -1,0 +1,44 @@
+{
+  "integrationName": "healthmart",
+  "orderSchema": {
+    "product": {
+      "field": "healthMartProduct",
+      "type": "string"
+    },
+    "quantity": {
+      "field": "healthMartQuantity",
+      "type": "number"
+    },
+    "customerInfo": {
+      "field": "healthMartCustomerInfo",
+      "type": "object",
+      "properties": {
+        "name": {
+          "field": "healthMartCustName",
+          "type": "string"
+        },
+        "address": {
+          "field": "healthMartCustAddress",
+          "type": "string"
+        },
+        "city": {
+          "field": "healthMartCustCity",
+          "type": "string"
+        },
+        "state": {
+          "field": "healthMartCustState",
+          "type": "string"
+        },
+        "zipCode": {
+          "field": "healthMartCustZipcode",
+          "type": "string"
+        },
+        "country": {
+          "field": "healthMartCustCountry",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "endpoint": "http://pharmacy-mock-service-env.eba-xzj3bbnm.us-east-1.elasticbeanstalk.com/healthmart/orders"
+}
